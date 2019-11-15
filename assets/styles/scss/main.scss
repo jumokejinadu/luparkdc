@@ -1,0 +1,155 @@
+@import "0-plugins/0-plugins";
+@import "1-helpers/1-helpers";
+@import "2-base/2-base";
+@import "3-layout/3-layout";
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+#hero {
+  text-align: center;
+  height: 100vh;
+  h1 {
+    margin-bottom: 2rem;
+    color: $text-color;
+  }
+  h5 {
+    padding: 0 6rem;
+    color: $text-color-alt;
+    line-height: 35px;
+  }
+  .hero-banner {
+    height: 266px;
+    width: 100vw;
+    background: url("../../../assets/media/lagos-london-line-sketch.svg") no-repeat left;
+    background-size: cover;
+
+  }
+}
+
+#latestProject {
+  min-height: 600px;
+  padding: 5.5rem 0;
+  background-color: #10375a;
+  margin-top: 4.5rem;
+  //display: flex;
+  //align-items: center;
+
+  .thumbnail {
+    background: url("../../../assets/media/crowdforce-preview@3x.jpg") no-repeat center;
+    background-size: cover;
+    width: 470px;
+    height: 600px;
+    position: absolute;
+    top: -12rem;
+  }
+
+  .content {
+    color: #ffffff;
+    .heading {
+      font-weight: 400;
+      padding-bottom: 1rem;
+      margin-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, .15);
+    }
+    .description {
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+#ourServices {
+  padding: 170px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .thumbnail {
+    background: url("../../../assets/media/ux-design-team-working@2x.jpg") no-repeat center;
+    background-size: cover;
+    width: 510px;
+    height: 800px;
+  }
+
+  .content {
+    position: absolute;
+    padding: 3rem;
+    left: -8rem;
+    top: 3.8rem;
+    background: #ffffff;
+    max-width: 600px;
+
+    .heading {
+      font-weight: 400;
+      padding-bottom: 1rem;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #eaeaea;
+      color: $pri-color;
+    }
+    h3 {
+      margin-bottom: 40px;
+    }
+    .description {
+      font-weight: 400;
+      margin-bottom: 18px;
+
+      span {
+        font-size: 14px;
+        color: $text-color-alt;
+        position: relative;
+        margin-right: 2rem;
+
+        &:before {
+          content: '';
+          height: 1px;
+          width: 15px;
+          background: $text-color-alt;
+          position: absolute;
+          left: 25px;
+          top: 9px;
+        }
+      }
+    }
+
+    .cta {
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+#featuredClients {
+  padding: 170px 0;
+  background: #000000;
+  color: #ffffff;
+
+  .thumbnail {
+    border-top: 1px solid #222222;
+    margin-top: 3rem;
+    background: url("../../../assets/media/client-logo-monochrome@2x.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 256px;
+  }
+}
+
+#sectionCTA {
+  padding: 100px 0 0;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  min-height: 405px;
+
+  .hero-banner {
+    height: 450px;
+    width: 100vw;
+    //background: url("../../../assets/media/lagos-london-line-sketch.svg") no-repeat left;
+    background: url("../../../assets/media/hero-divider.svg") no-repeat top;
+    background-size: cover;
+    margin-top: -310px!important;
+    //margin-top: -405px!important;
+
+  }
+}

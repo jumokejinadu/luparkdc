@@ -1,0 +1,136 @@
+// Button Styles
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 1.5rem;
+  border-radius: 0;
+}
+.btn-transparent { // Transparent button
+  color: #ffffff;
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  padding: 0.7rem 1.5rem;
+
+  background: linear-gradient(to right, $pri-color 50%, $transparent 50%);
+  background-size: 200% 104%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+
+  img {
+    width: 13px;
+    height: auto;
+    margin-bottom: 2px;
+    margin-left: 13px;
+    transition: margin-left .3s ease-in-out;
+  }
+  &:hover {
+    color: #ffffff;
+    background-position: left bottom;
+
+    img {
+      margin-left: 22px;
+      width: 15px;
+    }
+  }
+}
+
+.pri-btn {
+  border-radius: 100px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 14px 36px;
+  border: solid 1px rgba(0, 0, 0, 1);
+
+  background: linear-gradient(to left, transparent 50%, $pri-color 50%);
+  background-size: 205% 105%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+
+  &.light {
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-position: left bottom;
+    //border: none;
+    border-color: $pri-color;
+    //background-color: darken($pri-color,10%);;
+  }
+}
+.btn-primary {
+  color: #fff;
+  background-color: $pri-color;
+  border-color: $pri-color;
+  transition: all .3s linear;
+
+  &:hover {
+    background-color: darken($pri-color, 10%);
+    border-color: darken($pri-color, 10%);
+  }
+}
+.text-btn {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000;
+  padding-bottom: 3px;
+  border-bottom: solid 1.5px $pri-color;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: $sec-color;
+  border-color: $sec-color;
+  transition: all .3s linear;
+
+  &:hover {
+    background-color: darken($sec-color, 10%);
+    border-color: darken($sec-color, 10%);
+  }
+}
+
+a {
+  text-decoration: none !important;
+  transition: all .3s linear !important;
+}
+
+
+// Bootstrap Outline Styles
+.btn:focus, input:focus, .navbar-toggler, button, select:focus, select, input.custom-file-input {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+// Modal Styles
+.modal-content {
+  border: none;
+  border-radius: 0;
+  .modal-header {
+    background-color: $sec-color;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+  }
+
+  .close {
+    color: #ffffff;
+    &:hover {
+      color: #ffffff;
+      opacity: 1 !important;
+    }
+  }
+
+  .modal-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+#main-container {
+  background: #ffffff;
+}

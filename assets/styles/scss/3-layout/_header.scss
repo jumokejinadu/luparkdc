@@ -1,0 +1,75 @@
+header {
+  .navbar {
+    padding: 50px 1rem;
+
+    .nav-link {
+      color: $text-color-alt;
+      &.active, &:hover {
+        color: $text-color;
+      }
+    }
+  }
+  @media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 17px;
+      padding-left: 17px;
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-toggler.navbar-overlay {
+      display: block !important;
+      //font-size: 12px;
+    }
+  }
+  .navbar-overlay {
+    z-index: 9999;
+  }
+
+  #navbarOverlay {
+    z-index: 9999;
+
+    .inner {
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      position: fixed;
+      z-index: 1;
+      background: #000000 !important;
+    }
+  }
+
+  .hamburger {
+    padding: .5rem 1rem;
+
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+      width: 24px;
+      height: 2.4px;
+      background-color: #000;
+      border-radius: 0px;
+    }
+
+    .hamburger-inner:before {
+      top: -7px;
+    }
+
+    .hamburger-inner:after {
+      top: -14px !important;
+    }
+
+    .hamburger-box {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+    background-color: #fff;
+  }
+
+  .navbar-nav {
+    border-right: 1px solid #eaeaea;
+  }
+
+}
+
